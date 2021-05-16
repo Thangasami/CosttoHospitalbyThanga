@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run cost.py
+web: sh setup.sh && streamlit run --server.port $PORT cost.py
