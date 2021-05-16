@@ -1,4 +1,6 @@
+
 import streamlit as st
+from PIL import Image
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -10,9 +12,17 @@ from xgboost import XGBRegressor
 from sklearn.neighbors import KNeighborsRegressor 
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error 
 
-
 #-----------------------#
 # Page Layout
+
+st.set_page_config(layout="wide")
+
+#Title
+st.title('Cost To Hospital Prediction')
+image = Image.open('Hack.jpg')
+
+st.image(image, width =600)
+
 
 
 st.markdown ("""
