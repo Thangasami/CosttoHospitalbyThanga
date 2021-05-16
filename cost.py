@@ -6,7 +6,6 @@ Created on Sat May 15 14:54:24 2021
 """
 
 import streamlit as st
-from PIL import Image
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -15,8 +14,6 @@ from sklearn.ensemble import RandomForestRegressor, VotingRegressor, StackingReg
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.svm import SVR
 from xgboost import XGBRegressor
-import lightgbm as lgb
-from catboost import CatBoostRegressor
 from sklearn.neighbors import KNeighborsRegressor 
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error 
 
@@ -25,13 +22,6 @@ from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error
 # Page Layout
 
 st.set_page_config(layout="wide")
-
-#Title
-st.title('Cost To Hospital Prediction')
-image = Image.open('Hack.jpg')
-
-st.image(image, width =600)
-
 
 
 st.markdown ("""
