@@ -1,4 +1,3 @@
-
 import streamlit as st
 from PIL import Image
 import pandas as pd
@@ -11,9 +10,6 @@ from sklearn.svm import SVR
 from xgboost import XGBRegressor
 from sklearn.neighbors import KNeighborsRegressor 
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error 
-
-#-----------------------#
-# Page Layout
 
 st.set_page_config(layout="wide")
 
