@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 15 14:54:24 2021
-
-@author: sthan
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -20,8 +13,6 @@ from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error
 
 #-----------------------#
 # Page Layout
-
-st.set_page_config(layout="wide")
 
 
 st.markdown ("""
